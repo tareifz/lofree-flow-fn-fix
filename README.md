@@ -16,6 +16,12 @@ What is needed - to create a file in the `/etc/modprobe.d` directory and to set 
 echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/20_lofree_fn_mode_fix.conf
 ```
 
+For Ubuntu you need to execute the following:
+
+```sh
+update-initramfs -u
+```
+
 Reboot.
 
 ## Fix 2: script (non-persistent)
